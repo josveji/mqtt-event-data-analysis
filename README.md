@@ -1,19 +1,14 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/8jjrQWwr)
 # Proyecto de programación de IE0405 - Modelos Probabilísticos de Señales y Sistemas
+
+El proyecto se desarrolla con el propósito de implementar una canalización completa de procesamiento de datos proveniente de una fuente externa en tiempo real. En este caso, los datos consisten en eventos recibidos secuencialmente a través de un tópico MQTT, cada uno acompañado de una marca temporal. A partir de estas marcas temporales se calcula el tiempo de retraso entre eventos consecutivos, lo cual permite estudiar el comportamiento temporal del sistema que los genera. Comprender la distribución estadística de dichos retrasos es fundamental para caracterizar la dinámica del proceso, identificar patrones, evaluar estabilidad y proponer modelos que describan adecuadamente su variabilidad.
 
 Los archivos incluidos en el repositorio original son:
 
-- `mkdocs.yml`: configuración de la documentación en Material for MkDocs. Para más detalles, ver su [documentación](https://squidfunk.github.io/mkdocs-material/).
+- `mkdocs.yml`: configuración de la documentación en Material for MkDocs.
 - `pyproject.toml`: especificación del proyecto y de las dependencias de paquetes de Python.
 - `LICENSE`: licencia Creative Commons [Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed.es) de derechos de autor.
 - `.gitignore`: archivos y directorios que Git ignora para hacer control de versiones y para subir a un repositorio remoto. Típicamente son archivos con datos privados o específicos del sistema operativo local, que no deben reproducirse en el repositorio de otros desarrolladores.
 - `uv.lock`: parámetros del entorno de Python que será ejecutado con `uv` (más información en la [documentación de uv](https://docs.astral.sh/uv/)).
-
-## Documentación e instrucciones del proyecto
-
-Las instrucciones del proyecto están disponibles en la página:
-
-[https://mpss-eie.github.io/proyecto](https://mpss-eie.github.io/proyecto)
 
 ## Instrucciones para ejecución local
 
@@ -117,28 +112,3 @@ Para salir de la visualización, utilizar `Ctrl + C`, o, de otro modo, dejar el 
 ```sh
 uv run src/client.py
 ```
-
-## Algunas recomendaciones para Markdown
-
-La documentación está en Markdown, que tiene muchas posibilidades.
-
-### Ejemplo de ecuaciones matemáticas
-
-Sea $X$ (ejemplo de una variable matemática en línea) una variable aleatoria con:
-
-$$
-x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-$$
-
-donde $a \neq 0$ (ejemplo de ecuación en línea).
-
-### Ejemplo de tablas
-
-Herramienta recomendada: [TableConvert](https://tableconvert.com/).
-
-| Producto | Precio |
-|----------|--------|
-| Piña     | 1500   |
-| Melón    | 1250   |
-| Manzana  | 2100   |
-| Papaya   | 1200   |
